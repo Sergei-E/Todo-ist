@@ -1,0 +1,102 @@
+    #todolist
+    /*рамка*/
+    
+    {
+        border: 2px solid #A63F00;
+        border-radius: 15px;
+        width: 350px;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+        margin: 0 auto;
+        background-color: #FFF973;
+    }
+    
+    #Zag
+    /*Загаловок*/
+    
+    {
+        font-family: sans-serif;
+        color: #620CAC;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        text-shadow: 5px 2px 3px rgba(122, 122, 122, 0.5);
+    }
+    
+    #item
+    /* Поле записи*/
+    
+    {
+        width: 200px;
+        height: 40px;
+        border: 0px;
+        border-radius: 15px;
+        background-color: aqua;
+        padding: 10px;
+    }
+    
+    #ty
+    /*кнопка очистить*/
+    
+    {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        width: auto;
+        background-color: gold;
+        border-radius: 15px;
+        border: 0px;
+        font-weight: 100;
+        color: #3E0470;
+        box-shadow: 2px 2px 2px;
+        margin-left: 5px;
+    }
+    
+    #t
+    /*Записи*/
+    
+    {
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 100;
+        color: #3E0470;
+    }
+    
+    li {
+        font-family: sans-serif;
+        color: #071C71;
+        border: 1px solid #071C71;
+        padding: 5px;
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px 0;
+        background-color: #FFF973;
+        list-style-type: none;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    #delet {
+        color: #FFFFFF;
+        background-color: rgb(0, 0, 0);
+        margin-left: 0 auto;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-family: sans-serif;
+        width: 70px;
+        height: 30px;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    
+    #delet:hover {
+        background-color: rgb(255, 0, 0);
+    }

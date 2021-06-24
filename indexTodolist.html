@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Todolistv00</title>
+</head>
+
+<body>
+    <section id="todolist">
+        <form>
+            <h1 id="Zag">Todo list </h1>
+            <div class="container">
+                <form>
+                    <input type="text" id="item" placeholder="Record" />
+                    <input type="button" id="ty" value="Add" onclick="Zapis()" />
+                    <input type="reset" id="ty" value="Clear" />
+                </form>
+                <h1 id="t">Записи:</h1>
+                <ol id="list"></ol>
+            </div>
+        </form>
+    </section>
+    <script>
+        function Zapis() { //вывод записи 
+            let item = document.getElementById("item").value;
+            if (item === "") {
+                alert("Вы ввели пустое значанеи");
+            } else {
+                let list = document.querySelector('#list');
+                let items = "<input type='button' id='delet' value='Delete' onclick ='del()'/";
+                let oi = item + "<p>" + items + "</p>";
+                list.innerHTML += "<li>" + oi + "</li>";
+                store();
+            }
+        }
+        //удаленме из списка 
+        function del() {
+            event.target.closest('li').remove();
+        }
+        //сохраняет в local storage
+        function store() {
+            window.localStorage.myitems = list.innerHTML;
+        }
+        //вызывает с local storage и сохраняет при обновлении 
+        function getValues() {
+            let storedValues = window.localStorage.myitems;
+            if (!storedValues) {
+                list.innerHTML = '';
+            } else {
+                list.innerHTML = storedValues;
+            }
+        }
+        getValues();
+    </script>
+</body>
+
+</html>
